@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+     
+      
+      .flip-card3 {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        border-radius: 20px;
+        margin-left: 230%;
+      }
+
+      .flip-card-inner3 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0px 0px 30px black;
+        border-radius: 20px;
+      }
+
+      .flip-card3:hover .flip-card-inner3 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front3,
+      .flip-card-back3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 20px;
+      }
+
+      .flip-card-front3 {
+        background-color: #bbb;
+        color:black;
+      }
+
+      .flip-card-back3 {
+        background-image: linear-gradient(black,#6f7376,gray,white,#be9a60,gray,black);
+        color: rgb(19, 16, 11);
+        transform: rotateY(180deg);
+        overflow: scroll;
+      }
+
+      .row {
+        display: flex;
+        margin-top: 8%;
+        margin-left: 4%;
+       
+      }
+      .column {
+        flex: 55.33%;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-image: url('https://thumbs.dreamstime.com/z/dsp-acronym-wooden-cubes-background-light-balls-dsp-digital-signal-processing-processor-acronym-wooden-cubes-274597130.jpg');
+
+      background-repeat: no repeat;
+      backdrop-filter: blur(0px);
+      background-size:cover;
+    "
+  >
+    <div
+      style="
+        color: black;
+        font-size: 350%;
+        font-weight: 1000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+      "
+    >
+      Deputy Superintended of Police.
+      <p>
+        <a href="sidebar1.html">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
+            alt="W3Schools.com"
+            width="40"
+            height="50"
+            style="background-color: white"
+          />
+        </a>
+      </p>
+    </div>
+    <div class="row" style="background-attachment: fixed">
+     
+     
+      <div class="col">
+        <div class="flip-card3">
+          <div class="flip-card-inner3">
+            <div class="flip-card-front3">
+              <img
+                src="https://t4.ftcdn.net/jpg/03/75/06/11/360_F_375061169_yArbduYmoxd29VlSFGMLJGffNvPQQdpE.jpg"
+                alt="irrigation"
+                style="
+                  width: 300px;
+                  height: 300px;
+                  border-radius: 20px;
+                  background-attachment: fixed;
+                "
+              />
+              <div class="centered" style="color: black; font-weight: 30px">
+                
+              </div>
+            </div>
+            <div class="flip-card-back3">
+              <h1>
+               PSC exam/APPSC-group-1 exam
+              </h1>
+             
+              <div>
+                <a
+                  href="sidebar1.html"
+                  style="font-size: 30px; font-weight: 30px"
+                  >DGP</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="policeflowchart.html" id="linkButton">
+   <center> <button style="color:black;width:210px;height:40px;font-size:26px;background-image:linear-gradient(black,gray,white,gray,black);margin-top:10px;margin-right:67px;border-radius:40px">PREVIOUS</button></center>
+ 
+  </a>
+  <script>
+    // Add a click event listener to the button element
+    document.getElementById('linkButton').addEventListener('click', function() {
+      // Navigate to the link's URL when the button is clicked
+      window.location.href = this.href;
+    });
+    </script>
+
+  </body>
+</html>
+
